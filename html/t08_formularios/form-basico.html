@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>t08: ejemplo inicial</title>
+</head>
+
+<body>
+  <h1>Formularios HTML</h1>
+  <h2>Formulario básico</h2>
+
+  <!-- method: get o post 
+         * get: por defecto, la info en la URL de la petición HTTP
+         * post: si ficheros o información sensible, la info en el cuerpo
+                 del mensaje HTTP
+    -->
+  <form action="/gestiona/procesa.php" method="get" enctype="multipart/form-data">
+
+    <!-- FORMA A) label asociada con for e id  a-->
+    <div>
+      <p>
+        <label for="user">Usuario</label>
+        <input name="username" type="text" id="user" placeholder="Nombre de User" size="15">
+      </p>
+    </div>
+
+    <!-- FORMA B) label asociada por "anidación"  -->
+    <div>
+      <p>
+        <label for="clave">Clave del usuario</label>
+        <input type="password" name="clave" id="clave" size="10">
+      </p>
+
+    </div>
+
+    <div>
+      <p>
+        <input type="checkbox" name="modulo" id="modulo" value="lmsgi">
+        <label for="modulo">LMSGI</label>
+      </p>
+      <p>
+        <input type="checkbox" name="modulo" id="ENT" value="ENT">
+        <label for="ENT">ENT</label>
+      </p>
+
+    </div>
+    <div>
+      <p><input type="radio" name="horario" id="mañana" value="mañana" checked>
+        <label for="mañana">Mañana</label>
+      </p>
+      <p><input type="radio" name="horario" id="tarde" value="tarde">
+        <label for="tarde">Tarde</label>
+      </p>
+      <p><input type="radio" name="horario" id="noche" value="noche">
+        <label for="noche">Noche</label>
+      </p>
+    </div>
+    <div>
+      <p>
+        <input type="checkbox" name="legal" id="legal" value="si" required>
+        <label for="legal">Acepta las condiciones legales</label>
+      </p>
+    </div>
+
+    <div>
+      <label for="factura">Factura adjunta</label>
+      <input type="file" name="factura" id="factura">
+    </div>
+    <div>
+      <label for="resumen">Resumen</label>
+      <div>
+        <textarea name="resumen" id="resumen" cols="30" rows="10" maxlength="250"
+          placeholder="Indique su incidencia"></textarea>
+      </div>
+    </div>
+    <div>
+      <label for="destinos">Seleccione destino</label>
+      <select name="destinos" id="destinos">
+        <optgroup label="destinos baratos">
+          <option value="Mad">Madrid</option>
+          <option value="Bar">Barcelona</option>
+          <option value="Val">Valencia</option>
+          <option value="Bil">Bilbao</option>
+        </optgroup>
+        <optgroup label="vuelos directos">
+          <option value="Mad">Madrid</option>
+          <option value="Bar">Barcelona</option>
+          <option value="Val">Valencia</option>
+          <option value="Bil">Bilbao</option>
+        </optgroup>
+        <optgroup lable="opciones con escala">
+          <option value="Mad">Madrid</option>
+          <option value="Bar">Barcelona</option>
+          <option value="Val">Valencia</option>
+          <option value="Bil">Bilbao</option>
+        </optgroup>
+        <optgroup label="Vuelos en primera">
+          <option value="Mad">Madrid</option>
+          <option value="Bar">Barcelona</option>
+          <option value="Val">Valencia</option>
+          <option value="Bil">Bilbao</option>
+        </optgroup>
+
+
+      </select>
+
+    </div>
+
+    <div class="sub">
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </div>
+
+
+
+  </form>
+
+
+</body>
+
+</html>

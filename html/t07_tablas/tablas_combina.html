@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas ejemplos iniciales</title>
+    <style>
+        td[colspan], td[rowspan] {
+            background-color: silver;
+            text-align: center;
+        }
+        thead, tfoot{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tablas ejemplos de uniwebsidad</h1>
+
+
+    <h2>Ejemplo de uso de thead, tbody, tfoot</h2>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th rowspan="2">Lorem, ipsum dolor.</th>
+                <td colspan="4">Accusantium, atque minus?</td>
+ <!--                <td>Voluptatem, explicabo sit.</td>
+                <td>Quod, in totam.</td>
+                <td>Iusto, at harum.</td>   -->
+            </tr>
+            <tr>
+               <th scope="col">Sunt, in.</th>
+               <th scope="col">Harum, earum.</th>
+               <th scope="col">Ut, sequi!</th>
+               <th scope="col">Nam, voluptatibus?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Dolores, laboriosam?</td>
+                <td>Reiciendis, suscipit.</td>
+                <td>Ratione, rem.</td>
+                <td>Totam, quod?</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Amet, magnam.</td>
+                <td>Animi, consequuntur!</td>
+                <td>Accusantium, error?</td>
+                <td>Ullam, quisquam?</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Architecto, sed?</td>
+                <td>Asperiores, libero!</td>
+                <td>Deserunt, commodi.</td>
+                <td>In, ut!</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Nemo, aspernatur.</td>
+                <td>Saepe, beatae.</td>
+                <td>Quod, ratione!</td>
+                <td>Ratione, cupiditate?</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Non, quia.</td>
+                <td>Debitis, eveniet!</td>
+                <td>Dolores, aspernatur!</td>
+                <td>Nostrum, atque.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Explicabo, porro omnis.</td>
+                <td>Hic, impedit ullam.</td>
+                <td>Maxime, at esse?</td>
+                <td>Possimus, architecto molestiae!</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Cupiditate, consectetur non!</td>
+                <td>Possimus, culpa doloribus.</td>
+                <td>Fugiat, sit perferendis!</td>
+                <td>Suscipit, sed molestias?</td>
+            </tr>
+        </tbody>
+      
+        <tfoot>
+            <tr>
+                <th rowspan="2">Lorem, ipsum dolor.</th>
+                <td colspan="4">Accusantium, atque minus?</td>
+ <!--                <td>Voluptatem, explicabo sit.</td>
+                <td>Quod, in totam.</td>
+                <td>Iusto, at harum.</td>   -->
+            </tr>
+            <tr>
+               <th scope="col">Sunt, in.</th>
+               <th scope="col">Harum, earum.</th>
+               <th scope="col">Ut, sequi!</th>
+               <th scope="col">Nam, voluptatibus?</th>
+            </tr>
+
+           
+        </tfoot>
+
+    </table>
+
+
+
+    <h2>Ejemplos de combinaciones</h2>
+
+
+    <table border="1">
+        <caption>Título de la tabla</caption>
+        
+        <!-- tr*6>td*5>lorem2 -->
+        <tr>
+            <th scope="col">Lorem.</th>
+            <th scope="col">Cum.</th>
+            <th scope="col">Sit?</th>
+            <th scope="col">Temporibus!</th>
+            <th scope="col">Nisi.</th>
+        </tr>
+
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td colspan="3">Accusantium, tenetur.</td>
+            <td>Voluptate, cum.</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Tempora, quia.</td>
+            <td>Ducimus, molestiae.</td>
+            <td>Libero, similique.</td>
+            <td>Aliquid, eos.</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Voluptatem, perspiciatis.</td>
+            <td>Odio, quasi?</td>
+            <td>Repellendus, nobis.</td>
+            <td>Nam, atque!</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td rowspan="3">Inventore, dolorem.</td>
+            <td>Hic, eveniet?</td>
+            <td colspan="2" rowspan="3">Aspernatur, aliquid?</td>
+            <!-- <td>Asperiores, rem!</td> -->
+        </tr>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <!-- <td>Iste, asperiores.</td> -->
+            <td>Adipisci, officia.</td>
+            <td>Sequi, labore?</td>
+            <td>Iusto, architecto!</td> -
+        </tr>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <!-- <td>Ratione, repellendus.</td> -->
+            <td>Laborum, harum.</td>
+            <!-- <td>Laudantium, provident.</td>
+            <td>Dolorem, consequatur.</td> -->
+        </tr>
+
+    </table>
+    
+</body>
+</html>
